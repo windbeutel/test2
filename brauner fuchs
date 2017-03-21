@@ -1,0 +1,16 @@
+package main
+
+import "fmt"
+import "strings"
+
+const satz1 = "Der braune Fuchs springt über den kleinen, braunen Zaun";
+
+func main() {
+	fmt.Println(strings.ToLower(satz1))
+	fmt.Println(strings.ToTitle(satz1))
+	fmt.Println(strings.Title(satz1))
+	fmt.Println(strings.Count(satz1, "braun"))
+	fmt.Println(strings.Fields(satz1)[0])
+	fmt.Println(strings.Repeat("Fuchs ", 4))
+	fmt.Println(strings.Replace(satz1, "braun", "rot", -1))
+}
